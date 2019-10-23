@@ -10,6 +10,13 @@ body{
     display: block;
 }
 
+.art_content p::first-letter{
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #02b;
+}
+
 footer{
     background: #eaeaea;
 }
@@ -21,12 +28,17 @@ footer{
 }
 
 .menu li:last-child{
-    display: inline;
     border-right: none;
 }
 
 .menu a {
     color: #226;
+    font-family: sans-serif;
+    text-decoration: none;
+    width: 120px;
+}
+.menu a:hover {
+    color: #FC3C00;
     font-family: sans-serif;
     text-decoration: none;
     width: 120px;
@@ -69,6 +81,10 @@ footer{
     font-size: 14px;
 }
 
+.feedback_form input::first-letter{
+    text-transform: uppercase;
+}
+
 
 .feedback_form textarea{
     width: 100%;
@@ -77,14 +93,14 @@ footer{
     resize: none;
     border: 2px solid #ccc;
     border-radius: 4px;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     padding: 12px 20px;
     margin: 5px 0;
     color: #024;
     font-size: 12px;
   }
 
-  .feedback_form input[type=button], input[type=submit], input[type=reset] {
+.feedback_form input[type=button], input[type=submit], input[type=reset] {
     background-color: #4CAF50;
     border: none;
     color: white;
@@ -94,6 +110,15 @@ footer{
     cursor: pointer;
   }
 
-  .art_image{
+.art_image{
       outline: #024 solid 1px;
   }
+
+.art_image:hover{
+    outline: none;
+}
+
+::-webkit-input-placeholder {color:gray; background-color: #f8f8f8;}
+::-moz-placeholder          {color:gray; background-color: #f8f8f8;}/* Firefox 19+ */
+:-moz-placeholder           {color:gray; background-color: #f8f8f8;}/* Firefox 18- */
+:-ms-input-placeholder      {color:gray; background-color: #f8f8f8;}
