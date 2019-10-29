@@ -19,6 +19,10 @@ body {
     clear: both;
 }
 
+.art_other_part{
+    clear: both;
+}
+
 .logo{
     background-image: url(../img/logo.jpg);
     width: 45px;
@@ -29,7 +33,6 @@ body {
 
 .content {
     background-color: #E1E0E1;
-    height: 400px;
 }
 
 .footer {
@@ -161,6 +164,27 @@ input[type=reset] {
     margin: 4px 2px;
     cursor: pointer;
 }
+
+.button_buy{
+    background-color: #4CAF50;
+    color: white;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+}
+
+.button_buy:hover{
+    background-color: #518552;
+    padding: 1px;
+}
+
+.art_link_name{
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
 
 .art_image {
     outline: #024 solid 1px;
